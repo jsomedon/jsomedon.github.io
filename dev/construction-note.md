@@ -2,7 +2,7 @@
 
 ## files && branch scheme
 
-```
+```text
 _____________ <master> : generated site files in root dir
 
 _____________ <draft> : draft files in draft dir
@@ -16,22 +16,18 @@ I am tracking draft with a seperate branch so I can `git log` to check my author
 ## todo
 
 - basic feature
+  - database
     - searching
-        - database
-        - search logic
-    - index page
-        - database
-        - generation logic
-    - template
-    - building
-    - testing
-    - publishing
-    - repo utility
-        - hook to auto rebase `dev` on each commit in `draft`
+    - content page generation
+  - template
+  - building
+  - testing
+  - publishing
+  - repo utility
+    - [x] hook to auto rebase `dev` on each commit in `draft`
 - enhancement
-    - cache controll (maybe it's a basic feature...)
-    - mobile support (css layout, overall design.. this should be huge)
-    - that cool animation on scroll event you see on apple product page (purely eyecandy)
+  - cache controll (maybe it's a basic feature...)
+  - mobile support (css layout, overall design.. this should be huge)
+  - that cool animation on scroll event you see on apple product page (purely eyecandy)
 
 ## page structure && template design scheme
-
