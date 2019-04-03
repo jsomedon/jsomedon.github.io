@@ -1,0 +1,8 @@
+# put this in .git/hooks
+# rename it to post-commit
+# chmod +x this
+if [ `git rev-parse --abbrev-ref HEAD` = "draft" ]; then
+    echo "rebasing dev onto draft..."
+    git rebase draft dev
+    git checkout draft
+fi
